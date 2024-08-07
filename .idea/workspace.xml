@@ -5,23 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="added LocalizationService &amp; ComponentLocalizationService">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/ComponentLocalizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationMessageSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/MessageParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/java/Language.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/java/MessageParserTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/java/MessageServiceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/resources/test_messages_en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/resources/test_messages_ru.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-bungee/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-bungee/src/main/java/net/laffeymyth/localization/bungee/BungeeLocalizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LegacyLocalizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/PlainLocalizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +56,8 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/java5/IdeaProjects/localization/localization-commons/src/test/resources",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -147,6 +138,15 @@
       <option name="presentableId" value="Default" />
       <updated>1723043753954</updated>
     </task>
+    <task id="LOCAL-00001" summary="added LocalizationService &amp; ComponentLocalizationService">
+      <option name="closed" value="true" />
+      <created>1723052935378</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723052935378</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
