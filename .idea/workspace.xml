@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="added LocalizationService &amp; ComponentLocalizationService">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/ComponentLocalizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationMessageSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/MessageParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/java/Language.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/java/MessageParserTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/java/MessageServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/resources/test_messages_en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/test/resources/test_messages_ru.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2kKslBN85a9s0gEYS6XiPMvP3kn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.MessageParserTests.executor": "Run",
+    "JUnit.MessageParserTests.message.executor": "Run",
+    "JUnit.MessageParserTests.messageList.executor": "Run",
+    "JUnit.MessageParserTests.test.executor": "Run",
+    "JUnit.MessageServiceTests.test.executor": "Run",
+    "Maven.localization [package].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/java5/IdeaProjects/localization/localization-commons/src/test/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\java5\IdeaProjects\localization\localization-commons\src\test\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MessageParserTests">
+    <configuration name="MessageParserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="localization-commons" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MessageParserTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageParserTests.message" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="localization-commons" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MessageParserTests" />
+      <option name="METHOD_NAME" value="message" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageParserTests.messageList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="localization-commons" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MessageParserTests" />
+      <option name="METHOD_NAME" value="messageList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageParserTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="localization-commons" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MessageParserTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MessageServiceTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="localization-commons" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MessageServiceTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MessageParserTests" />
+        <item itemvalue="JUnit.MessageParserTests.message" />
+        <item itemvalue="JUnit.MessageParserTests.messageList" />
+        <item itemvalue="JUnit.MessageParserTests.test" />
+        <item itemvalue="JUnit.MessageServiceTests.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="" />
+      <created>1723043753954</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723043753954</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="added LocalizationService &amp; ComponentLocalizationService" />
+    <option name="LAST_COMMIT_MESSAGE" value="added LocalizationService &amp; ComponentLocalizationService" />
+  </component>
+</project>

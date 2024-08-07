@@ -1,0 +1,11 @@
+{
+  "player_join": {
+    "join": "player <player> has joined the game",
+    "quit": "player <player> has left the game"
+  },
+  "welcome_message": "welcome to server",
+  "welcome_message_list": [
+    "Recognize us by our sounds:",
+    "Nya kawaii, nya kawaii."
+  ]
+}
