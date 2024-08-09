@@ -31,7 +31,13 @@ public class MessageParser {
         if (jsonElement.isJsonObject()) {
             jsonElement.getAsJsonObject().entrySet().forEach(stringJsonElementEntry -> {
                 JsonElement value = stringJsonElementEntry.getValue();
-                String newKey = key + stringJsonElementEntry.getKey();
+
+                String newKey;
+                if (key.isEmpty()) {
+                    newKey = key + stringJsonElementEntry.getKey();
+                } else {
+                    newKey = key + "_" + stringJsonElementEntry.getKey();
+                }
 
                 parseNode(localizationMessageSource, value, newKey);
             });
