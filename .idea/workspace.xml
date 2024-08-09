@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="added BungeeLocalizationService &amp; PlainLocalizationService &amp; LegacyLocalizationService">
-      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/util/ComponentResolver.java" afterDir="false" />
+    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="added ComponentResolver">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LegacyLocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LegacyLocalizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization-commons/src/test/java/MessageServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/test/java/MessageServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-bungee/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/localization-bungee/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +26,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sweet333&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sweet333/localization-service.git&quot;,
+    &quot;accountId&quot;: &quot;5037139e-36ab-4df2-b9da-ed98ade73c9e&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2kKslBN85a9s0gEYS6XiPMvP3kn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,10 +57,13 @@
     "JUnit.MessageParserTests.messageList.executor": "Run",
     "JUnit.MessageParserTests.test.executor": "Run",
     "JUnit.MessageServiceTests.test.executor": "Run",
+    "Maven.localization [clean,package].executor": "Run",
+    "Maven.localization [deploy].executor": "Run",
+    "Maven.localization [install].executor": "Run",
     "Maven.localization [package].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/java5/IdeaProjects/localization/localization-commons/src/test/resources",
@@ -64,6 +80,11 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean package" />
+    </option>
   </component>
   <component name="RunManager" selected="JUnit.MessageServiceTests.test">
     <configuration name="MessageParserTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -150,13 +171,22 @@
       <option name="project" value="LOCAL" />
       <updated>1723054793031</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added ComponentResolver">
+      <option name="closed" value="true" />
+      <created>1723055773991</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723055773991</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="added LocalizationService &amp; ComponentLocalizationService" />
     <MESSAGE value="added BungeeLocalizationService &amp; PlainLocalizationService &amp; LegacyLocalizationService" />
-    <option name="LAST_COMMIT_MESSAGE" value="added BungeeLocalizationService &amp; PlainLocalizationService &amp; LegacyLocalizationService" />
+    <MESSAGE value="added ComponentResolver" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ComponentResolver" />
   </component>
 </project>
