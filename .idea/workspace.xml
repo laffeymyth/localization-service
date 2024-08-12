@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="MessageParser fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/ComponentLocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/ComponentLocalizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationService.java" afterDir="false" />
-    </list>
+    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="added words to LocalizationService" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723234086965</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added words to LocalizationService">
+      <option name="closed" value="true" />
+      <created>1723441168573</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723441168573</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,6 +207,8 @@
     <MESSAGE value="added ComponentResolver" />
     <MESSAGE value="added readme.md" />
     <MESSAGE value="MessageParser fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="MessageParser fix" />
+    <MESSAGE value="added words to LegacyLocalizationService" />
+    <MESSAGE value="added words to LocalizationService" />
+    <option name="LAST_COMMIT_MESSAGE" value="added words to LocalizationService" />
   </component>
 </project>
