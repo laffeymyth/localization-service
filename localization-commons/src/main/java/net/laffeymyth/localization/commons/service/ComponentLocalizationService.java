@@ -44,13 +44,15 @@ public class ComponentLocalizationService implements LocalizationService<TextCom
 
     @Override
     public TextComponent getWord(String key, int number, String language) {
+        TextComponent word = getMessageList(key, language).get(0);
+
         if (number % 100 > 10 && number % 100 < 15) {
-            return getMessageList(key, language).get(3);
+            return word.append(getMessageList(key, language).get(3));
         } else {
             return switch (number % 10) {
-                case 1 -> getMessageList(key, language).get(1);
-                case 2, 3, 4 -> getMessageList(key, language).get(2);
-                default -> getMessageList(key, language).get(3);
+                case 1 -> word.append(getMessageList(key, language).get(1));
+                case 2, 3, 4 -> word.append(getMessageList(key, language).get(2));
+                default -> word.append(getMessageList(key, language).get(3));
             };
         }
     }
