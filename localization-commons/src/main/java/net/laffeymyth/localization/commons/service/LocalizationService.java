@@ -9,4 +9,6 @@ public interface LocalizationService<T> {
     T getMessage(String messageKey, String language, TagResolver... tagResolvers);
 
     List<T> getMessageList(String messageListKey, String language, TagResolver... tagResolvers);
+
+    T getWord(String key, int number, String language);
 }

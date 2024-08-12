@@ -23,4 +23,9 @@ public class LegacyLocalizationService implements LocalizationService<String>  {
                 .map(serializer::serialize)
                 .toList();
     }
+
+    @Override
+    public String getWord(String key, int number, String language) {
+        return serializer.serialize(componentLocalizationService.getWord(key, number, language));
+    }
 }

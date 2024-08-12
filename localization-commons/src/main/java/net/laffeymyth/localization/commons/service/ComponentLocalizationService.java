@@ -41,4 +41,17 @@ public class ComponentLocalizationService implements LocalizationService<TextCom
                 .stream().map(s -> Component.empty().append(miniMessage.deserialize(s, tagResolvers)))
                 .toList();
     }
+
+    @Override
+    public TextComponent getWord(String key, int number, String language) {
+        if (number % 100 > 10 && number % 100 < 15) {
+            return getMessageList(key, language).get(3);
+        } else {
+            return switch (number % 10) {
+                case 1 -> getMessageList(key, language).get(1);
+                case 2, 3, 4 -> getMessageList(key, language).get(2);
+                default -> getMessageList(key, language).get(3);
+            };
+        }
+    }
 }

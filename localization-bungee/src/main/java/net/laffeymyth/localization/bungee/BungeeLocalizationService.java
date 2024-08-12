@@ -10,11 +10,11 @@ import java.util.List;
 
 public class BungeeLocalizationService implements LocalizationService<BaseComponent[]> {
     private final ComponentLocalizationService componentLocalizationService = new ComponentLocalizationService();
-    private final BungeeComponentSerializer bungeeComponentSerializer = BungeeComponentSerializer.get();
+    private final BungeeComponentSerializer serializer = BungeeComponentSerializer.get();
 
     @Override
     public BaseComponent[] getMessage(String messageKey, String language, TagResolver... tagResolvers) {
-        return bungeeComponentSerializer.serialize(
+        return serializer.serialize(
                 componentLocalizationService.getMessage(messageKey, language, tagResolvers)
         );
     }
@@ -23,7 +23,12 @@ public class BungeeLocalizationService implements LocalizationService<BaseCompon
     public List<BaseComponent[]> getMessageList(String messageListKey, String language, TagResolver... tagResolvers) {
         return componentLocalizationService.getMessageList(messageListKey, language, tagResolvers)
                 .stream()
-                .map(bungeeComponentSerializer::serialize)
+                .map(serializer::serialize)
                 .toList();
+    }
+
+    @Override
+    public BaseComponent[] getWord(String key, int number, String language) {
+        return serializer.serialize(componentLocalizationService.getWord(key, number, language));
     }
 }

@@ -5,7 +5,7 @@ import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 
 import java.util.List;
 
-public class PlainLocalizationService implements LocalizationService<String>  {
+public class PlainLocalizationService implements LocalizationService<String> {
     private final ComponentLocalizationService componentLocalizationService = new ComponentLocalizationService();
     private final PlainTextComponentSerializer serializer = PlainTextComponentSerializer.plainText();
 
@@ -22,5 +22,10 @@ public class PlainLocalizationService implements LocalizationService<String>  {
                 .stream()
                 .map(serializer::serialize)
                 .toList();
+    }
+
+    @Override
+    public String getWord(String key, int number, String language) {
+        return serializer.serialize(componentLocalizationService.getWord(key, number, language));
     }
 }

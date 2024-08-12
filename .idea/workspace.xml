@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="added readme.md">
+    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="MessageParser fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization-bungee/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/localization-bungee/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/MessageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/MessageParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/ComponentLocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/ComponentLocalizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,30 +47,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "JUnit.MessageParserTests.executor": "Run",
-    "JUnit.MessageParserTests.message.executor": "Run",
-    "JUnit.MessageParserTests.messageList.executor": "Run",
-    "JUnit.MessageParserTests.test.executor": "Run",
-    "JUnit.MessageServiceTests.test.executor": "Run",
-    "Maven.localization [clean,package].executor": "Run",
-    "Maven.localization [deploy].executor": "Run",
-    "Maven.localization [install].executor": "Run",
-    "Maven.localization [package].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/java5/IdeaProjects/spleef",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;JUnit.MessageParserTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageParserTests.message.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageParserTests.messageList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageParserTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MessageServiceTests.test.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.localization [clean,package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.localization [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.localization [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.localization [package].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/java5/IdeaProjects/spleef&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\java5\IdeaProjects\localization\localization-commons\src\test\resources" />
@@ -188,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723214817778</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MessageParser fix">
+      <option name="closed" value="true" />
+      <created>1723234086965</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723234086965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,6 +202,7 @@
     <MESSAGE value="added BungeeLocalizationService &amp; PlainLocalizationService &amp; LegacyLocalizationService" />
     <MESSAGE value="added ComponentResolver" />
     <MESSAGE value="added readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="added readme.md" />
+    <MESSAGE value="MessageParser fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="MessageParser fix" />
   </component>
 </project>

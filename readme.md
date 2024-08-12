@@ -18,7 +18,7 @@
 <dependency>
   <groupId>net.laffeymyth</groupId>
   <artifactId>localization-commons</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.3</version>
 </dependency>
 ```
 
