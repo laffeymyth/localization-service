@@ -4,8 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="added LICENSE">
+    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="ComponentLocalizationService.getWord() fix">
+      <change afterPath="$PROJECT_DIR$/localization-bungee/src/main/java/net/laffeymyth/localization/bungee/BungeeLocalizationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/ComponentLocalizationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LegacyLocalizationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/PlainLocalizationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-bungee/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/localization-bungee/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-bungee/src/main/java/net/laffeymyth/localization/bungee/BungeeLocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-bungee/src/main/java/net/laffeymyth/localization/bungee/BungeeLocalizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/ComponentLocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/ComponentLocalizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LegacyLocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LegacyLocalizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationMessageSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationMessageSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/LocalizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/MessageParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/MessageParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/PlainLocalizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/main/java/net/laffeymyth/localization/commons/service/PlainLocalizationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/test/java/MessageParserTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/test/java/MessageParserTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localization-commons/src/test/java/MessageServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/src/test/java/MessageServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -57,6 +75,7 @@
     "Maven.localization [deploy].executor": "Run",
     "Maven.localization [install].executor": "Run",
     "Maven.localization [package].executor": "Run",
+    "Maven.localization [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -208,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723444528825</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ComponentLocalizationService.getWord() fix">
+      <option name="closed" value="true" />
+      <created>1723475911830</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723475911830</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -221,6 +248,7 @@
     <MESSAGE value="added words to LegacyLocalizationService" />
     <MESSAGE value="added words to LocalizationService" />
     <MESSAGE value="added LICENSE" />
-    <option name="LAST_COMMIT_MESSAGE" value="added LICENSE" />
+    <MESSAGE value="ComponentLocalizationService.getWord() fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="ComponentLocalizationService.getWord() fix" />
   </component>
 </project>

@@ -16,7 +16,7 @@ public class MessageServiceTests {
 
         localizationMessageSource.putMessage("player_join", "Игрок <player> зашёл на сервер");
 
-        var componentLocalizationService = new ComponentLocalizationService();
+        var componentLocalizationService = ComponentLocalizationService.lang();
         componentLocalizationService.getLanguageMap().put(Language.RUSSIAN.getShortName(), localizationMessageSource);
 
         var message = componentLocalizationService.getMessage("player_join", Language.RUSSIAN.getShortName(),

@@ -14,7 +14,7 @@ public class LocalizationMessageSource {
     public String getMessage(String messageKey) {
         String message = messageMap.get(messageKey);
 
-        if (message == null){
+        if (message == null) {
             message = "<red>" + messageKey;
         }
 

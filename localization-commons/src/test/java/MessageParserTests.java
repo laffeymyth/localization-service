@@ -14,11 +14,19 @@ import java.util.Objects;
 @Slf4j
 public class MessageParserTests {
     private final PlainTextComponentSerializer plainTextComponentSerializer = PlainTextComponentSerializer.plainText();
-    private static ComponentLocalizationService localizationService;
+    private final ComponentLocalizationService localizationService = ComponentLocalizationService.lang();
 
     @BeforeAll
     public static void initLocalization() throws FileNotFoundException {
-        localizationService = createMessageService();
+        LocalizationMessageSource ru = new LocalizationMessageSource();
+        LocalizationMessageSource en = new LocalizationMessageSource();
+
+        MessageParser messageParser = new MessageParser();
+        messageParser.parse(ru, getReaderByFileName("test_messages_ru.json"));
+        messageParser.parse(en, getReaderByFileName("test_messages_en.json"));
+
+        ComponentLocalizationService.lang().getLanguageMap().put(Language.RUSSIAN.getShortName(), ru);
+        ComponentLocalizationService.lang().getLanguageMap().put(Language.ENGLISH.getShortName(), en);
     }
 
     @Test
@@ -31,21 +39,6 @@ public class MessageParserTests {
     public void messageList() {
         var messageList = localizationService.getMessageList("welcome_message_list", Language.ENGLISH.getShortName());
         messageList.forEach(textComponent -> log.info(plainTextComponentSerializer.serialize(textComponent)));
-    }
-
-    private static ComponentLocalizationService createMessageService() throws FileNotFoundException {
-        LocalizationMessageSource ru = new LocalizationMessageSource();
-        LocalizationMessageSource en = new LocalizationMessageSource();
-
-        MessageParser messageParser = new MessageParser();
-        messageParser.parse(ru, getReaderByFileName("test_messages_ru.json"));
-        messageParser.parse(en, getReaderByFileName("test_messages_en.json"));
-
-        ComponentLocalizationService componentLocalizationService = new ComponentLocalizationService();
-        componentLocalizationService.getLanguageMap().put(Language.RUSSIAN.getShortName(), ru);
-        componentLocalizationService.getLanguageMap().put(Language.ENGLISH.getShortName(), en);
-
-        return componentLocalizationService;
     }
 
     private static FileReader getReaderByFileName(String fileName) throws FileNotFoundException {

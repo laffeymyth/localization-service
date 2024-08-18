@@ -6,7 +6,6 @@ import com.google.gson.stream.JsonReader;
 
 import java.io.Reader;
 
-
 public class MessageParser {
     public void parse(LocalizationMessageSource localizationMessageSource, Reader reader) {
         JsonReader jsonReader = new JsonReader(reader);
