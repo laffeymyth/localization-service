@@ -20,7 +20,7 @@
 <dependency>
   <groupId>net.laffeymyth</groupId>
   <artifactId>localization-commons</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
 </dependency>
 ```
 
