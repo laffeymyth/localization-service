@@ -6,7 +6,7 @@
 
     <groupId>net.laffeymyth</groupId>
     <artifactId>localization</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <packaging>pom</packaging>
     <modules>
         <module>localization-commons</module>
@@ -21,8 +21,8 @@
 
     <distributionManagement>
         <repository>
-            <id>laffeymyth</id>
-            <url>https://repo.laffeymyth.fun/releases</url>
+            <id>javaplugg</id>
+            <url>https://repo.javaplugg.net/releases</url>
         </repository>
     </distributionManagement>
 

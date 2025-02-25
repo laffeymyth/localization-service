@@ -24,7 +24,7 @@ class ComponentLocalizationServiceImpl implements ComponentLocalizationService {
         LocalizationMessageSource localizationMessageSource = languageMap.get(language);
 
         if (localizationMessageSource == null) {
-            throw new RuntimeException("Источник сообщений язка" + language + " не найден!");
+            throw new RuntimeException("Language source " + language + " not found!");
         }
 
         return Component.empty().append(miniMessage.deserialize(localizationMessageSource.getMessage(messageKey), tagResolvers));
@@ -35,7 +35,7 @@ class ComponentLocalizationServiceImpl implements ComponentLocalizationService {
         LocalizationMessageSource localizationMessageSource = languageMap.get(language);
 
         if (localizationMessageSource == null) {
-            throw new RuntimeException("Источник сообщений язка" + language + " не найден!");
+            throw new RuntimeException("Language source " + language + " not found!");
         }
 
         localizationMessageSource.getMessageList(messageListKey);

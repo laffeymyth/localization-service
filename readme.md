@@ -20,7 +20,7 @@
 <dependency>
   <groupId>net.laffeymyth</groupId>
   <artifactId>localization-commons</artifactId>
-  <version>1.0.5</version>
+  <version>1.0.6</version>
 </dependency>
 ```
 
@@ -28,8 +28,8 @@
 
 ```xml
 <repository>
-  <id>laffeymyth</id>
-  <url>https://repo.laffeymyth.fun/release</url>
+    <id>javaplugg</id>
+    <url>https://repo.javaplugg.net</url>
 </repository>
 ```
 
