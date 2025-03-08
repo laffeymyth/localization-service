@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="version 1.0.7">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization-bungee/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/localization-bungee/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/localization-commons/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/localization-commons/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-    </list>
+    <list default="true" id="9fc13ebf-0ee9-4113-a21a-29a31a9dd1da" name="Changes" comment="rewrote to java 8" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +53,7 @@
     "JUnit.MessageParserTests.test.executor": "Run",
     "JUnit.MessageServiceTests.test.executor": "Run",
     "Maven.localization [clean,package].executor": "Run",
+    "Maven.localization [clean].executor": "Run",
     "Maven.localization [deploy].executor": "Run",
     "Maven.localization [install].executor": "Run",
     "Maven.localization [package].executor": "Run",
@@ -239,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740480384108</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="rewrote to java 8">
+      <option name="closed" value="true" />
+      <created>1741460855137</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741460855137</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -255,6 +258,7 @@
     <MESSAGE value="ComponentLocalizationService.getWord() fix" />
     <MESSAGE value="libs update" />
     <MESSAGE value="version 1.0.7" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 1.0.7" />
+    <MESSAGE value="rewrote to java 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="rewrote to java 8" />
   </component>
 </project>
