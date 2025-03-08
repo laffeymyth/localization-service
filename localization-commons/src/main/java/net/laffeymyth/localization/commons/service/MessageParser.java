@@ -5,6 +5,7 @@ import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 
 import java.io.Reader;
+import java.util.stream.Collectors;
 
 public class MessageParser {
     public void parse(LocalizationMessageSource localizationMessageSource, Reader reader) {
@@ -24,7 +25,7 @@ public class MessageParser {
                     .asList()
                     .stream()
                     .map(JsonElement::getAsString)
-                    .toList());
+                    .collect(Collectors.toList()));
         }
 
         if (jsonElement.isJsonObject()) {

@@ -10,6 +10,7 @@ import net.md_5.bungee.api.chat.BaseComponent;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 class BungeeLocalizationServiceImpl implements BungeeLocalizationService {
     private final ComponentLocalizationService componentLocalizationServiceImpl = ComponentLocalizationService.lang();
@@ -27,7 +28,7 @@ class BungeeLocalizationServiceImpl implements BungeeLocalizationService {
         return componentLocalizationServiceImpl.getMessageList(messageListKey, language, tagResolvers)
                 .stream()
                 .map(serializer::serialize)
-                .toList();
+                .collect(Collectors.toList());
     }
 
     @Override

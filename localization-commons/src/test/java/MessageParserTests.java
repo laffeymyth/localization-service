@@ -1,4 +1,6 @@
 import lombok.extern.slf4j.Slf4j;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.TextComponent;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 import net.laffeymyth.localization.commons.service.ComponentLocalizationService;
 import net.laffeymyth.localization.commons.service.LocalizationMessageSource;
@@ -9,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.List;
 import java.util.Objects;
 
 @Slf4j
@@ -31,13 +34,13 @@ public class MessageParserTests {
 
     @Test
     public void message() {
-        var message = localizationService.getMessage("welcome_message", Language.RUSSIAN.getShortName());
+        Component message = localizationService.getMessage("welcome_message", Language.RUSSIAN.getShortName());
         log.info(plainTextComponentSerializer.serialize(message));
     }
 
     @Test
     public void messageList() {
-        var messageList = localizationService.getMessageList("welcome_message_list", Language.ENGLISH.getShortName());
+        List<TextComponent> messageList = localizationService.getMessageList("welcome_message_list", Language.ENGLISH.getShortName());
         messageList.forEach(textComponent -> log.info(plainTextComponentSerializer.serialize(textComponent)));
     }
 

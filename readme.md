@@ -20,7 +20,7 @@
 <dependency>
   <groupId>net.laffeymyth</groupId>
   <artifactId>localization-commons</artifactId>
-  <version>1.0.7</version>
+  <version>1.0.8</version>
 </dependency>
 ```
 
@@ -29,7 +29,7 @@
 ```xml
 <repository>
     <id>javaplugg</id>
-    <url>https://repo.javaplugg.net</url>
+    <url>https://repo.javaplugg.net/releases/</url>
 </repository>
 ```
 
@@ -38,14 +38,14 @@ gradle (groovy):
 `dependency:`
 
 ```groovy
-implementation "net.laffeymyth:localization-commons:1.0.2"
+implementation "net.laffeymyth:localization-commons:1.0.8"
 ```
 
 `repository:`
 
 ```groovy
 maven {
-    url = uri("https://repo.laffeymyth.fun/releases")
+    url = uri("https://repo.javaplugg.net/releases/")
 }
 ```
 
@@ -54,13 +54,13 @@ kotlin (kotlin):
 `dependency:`
 
 ```kotlin
-implementation("net.laffeymyth:localization-commons:1.0.2")
+implementation("net.laffeymyth:localization-commons:1.0.8")
 ```
 
 `repository:`
 
 ```kotlin
 maven {
-    url = uri("https://repo.laffeymyth.fun/releases")
+    url = uri("https://repo.javaplugg.net/releases/")
 }
 ```

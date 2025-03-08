@@ -12,14 +12,14 @@ public class MessageServiceTests {
 
     @Test
     public void test() {
-        var localizationMessageSource = new LocalizationMessageSource();
+        LocalizationMessageSource localizationMessageSource = new LocalizationMessageSource();
 
         localizationMessageSource.putMessage("player_join", "Игрок <player> зашёл на сервер");
 
-        var componentLocalizationService = ComponentLocalizationService.lang();
+        ComponentLocalizationService componentLocalizationService = ComponentLocalizationService.lang();
         componentLocalizationService.getLanguageMap().put(Language.RUSSIAN.getShortName(), localizationMessageSource);
 
-        var message = componentLocalizationService.getMessage("player_join", Language.RUSSIAN.getShortName(),
+        Component message = componentLocalizationService.getMessage("player_join", Language.RUSSIAN.getShortName(),
                 ComponentResolver.tag("player", Component.text("LaffeyMyth"))
         );
 

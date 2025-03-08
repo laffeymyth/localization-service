@@ -2,6 +2,7 @@ package net.laffeymyth.localization.commons.service;
 
 import lombok.Getter;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -25,7 +26,7 @@ public class LocalizationMessageSource {
         List<String> messageList = messageListMap.get(messageListKey);
 
         if (messageList == null || messageList.isEmpty()) {
-            messageList = List.of("<red>" + messageListKey);
+            messageList = Collections.singletonList("<red>" + messageListKey);
         }
 
         return messageList;

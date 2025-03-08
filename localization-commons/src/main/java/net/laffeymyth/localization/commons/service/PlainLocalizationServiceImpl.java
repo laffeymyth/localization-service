@@ -7,6 +7,7 @@ import net.kyori.adventure.util.Services;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 class PlainLocalizationServiceImpl implements PlainLocalizationService {
     private final ComponentLocalizationService componentLocalizationService = ComponentLocalizationService.lang();
@@ -24,7 +25,7 @@ class PlainLocalizationServiceImpl implements PlainLocalizationService {
         return componentLocalizationService.getMessageList(messageListKey, language, tagResolvers)
                 .stream()
                 .map(serializer::serialize)
-                .toList();
+                .collect(Collectors.toList());
     }
 
     @Override

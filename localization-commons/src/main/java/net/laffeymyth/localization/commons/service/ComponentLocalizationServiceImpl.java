@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 class ComponentLocalizationServiceImpl implements ComponentLocalizationService {
@@ -41,7 +42,7 @@ class ComponentLocalizationServiceImpl implements ComponentLocalizationService {
         localizationMessageSource.getMessageList(messageListKey);
         return localizationMessageSource.getMessageList(messageListKey)
                 .stream().map(s -> Component.empty().append(miniMessage.deserialize(s, tagResolvers)))
-                .toList();
+                .collect(Collectors.toList());
     }
 
     @Override
@@ -51,11 +52,16 @@ class ComponentLocalizationServiceImpl implements ComponentLocalizationService {
         if (number % 100 > 10 && number % 100 < 15) {
             return word.append(getMessageList(key, language).get(3));
         } else {
-            return switch (number % 10) {
-                case 1 -> word.append(getMessageList(key, language).get(1));
-                case 2, 3, 4 -> word.append(getMessageList(key, language).get(2));
-                default -> word.append(getMessageList(key, language).get(3));
-            };
+            switch (number % 10) {
+                case 1:
+                    return word.append(getMessageList(key, language).get(1));
+                case 2:
+                case 3:
+                case 4:
+                    return word.append(getMessageList(key, language).get(2));
+                default:
+                    return word.append(getMessageList(key, language).get(3));
+            }
         }
     }
 
