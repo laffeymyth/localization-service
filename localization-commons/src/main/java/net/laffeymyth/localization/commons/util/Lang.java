@@ -24,19 +24,6 @@ public class Lang<T> {
         return (Lang<T>) CACHE.computeIfAbsent(key, k -> new Lang<>(service, language));
     }
 
-    @SuppressWarnings("unchecked")
-    public static <T> Lang<T> of(Class<LocalizationService<T>> serviceClass, String language) {
-        String key = serviceClass.getName() + ":" + language;
-        return (Lang<T>) CACHE.computeIfAbsent(key, k -> {
-            try {
-                LocalizationService<T> service = serviceClass.getDeclaredConstructor().newInstance();
-                return new Lang<>(service, language);
-            } catch (Exception e) {
-                throw new RuntimeException("Failed to create instance of LocalizationService", e);
-            }
-        });
-    }
-
     public T getMessage(String messageKey, TagResolver... tagResolvers) {
         return service.getMessage(messageKey, language, tagResolvers);
     }
