@@ -20,7 +20,7 @@
 <dependency>
   <groupId>net.laffeymyth</groupId>
   <artifactId>localization-commons</artifactId>
-  <version>1.0.10</version>
+  <version>1.0.11</version>
 </dependency>
 ```
 
@@ -38,7 +38,7 @@ gradle (groovy):
 `dependency:`
 
 ```groovy
-implementation "net.laffeymyth:localization-commons:1.0.10"
+implementation "net.laffeymyth:localization-commons:1.0.11"
 ```
 
 `repository:`
@@ -54,7 +54,7 @@ kotlin (kotlin):
 `dependency:`
 
 ```kotlin
-implementation("net.laffeymyth:localization-commons:1.0.10")
+implementation("net.laffeymyth:localization-commons:1.0.11")
 ```
 
 `repository:`
